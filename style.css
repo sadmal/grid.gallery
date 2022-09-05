@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+   display: grid;
+
+
+
+   grid-template-columns:1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr ;
+
+
+   grid-template-areas:  
+                   "header header header header"
+                   "row2 row2 row2 row2 "
+                   "row3 row3 row3 row3";
+
+
+}
+.header{
+    grid-area: header;
+    
+}
+.row2{
+    grid-area: row2;
+    display: flex;
+}
+.row3{
+    grid-area: row3;
+}
+.img{
+    width: 50vh;
+}
+
